@@ -1,6 +1,101 @@
+/* <------- NAVIGATION ITEMS -------> */
+/* Add title and font settings */
+
+
+h1,
+li,
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+}
+
 .nav-items {
     background-color: #231651;
+   
 }
+
+.nav-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+     display: block;
+     padding: 1em 0;
+     text-decoration: none;
+     background-color: #231651;
+     color: white;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+     background-color: #3EC300;
+     color: #231651;
+}
+
+.nav-button {
+    background-color: #3EC300;
+    color: white;
+    padding: 10px 100px 10px 100px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+}
+
+/* <------- HERO SECTION -------> */
+
+.main-banner {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../images/hero-bakery.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ .hero-box {
+     max-width: 1200px;
+     margin: 0 auto;
+     /* background-color: rgba(0, 0, 0, 0.5); */
+     color: white;
+     padding: 40px 10px 10px 10px;
+ }
+
+ .hero-box h1 {
+   text-align: center;
+   font-size: 28px;
+   font-weight: 600;
+   padding: 10px 0px 10px 0px;
+}
+
+.hero-box h3 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* <------- DESCRIPTION LIST -------> */
+
+
+
+
+
+
+
+
+
 
 .descrip-sec {
     background-color: #231651;
@@ -10,3 +105,4 @@
     display: flex;
     flex-direction: row;
 }
+
