@@ -1,0 +1,12 @@
+.nav-items {
+    background-color: #231651;
+}
+
+.descrip-sec {
+    background-color: #231651;
+}
+
+.descrip-list {
+    display: flex;
+    flex-direction: row;
+}
