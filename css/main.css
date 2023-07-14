@@ -301,6 +301,31 @@ footer p{
         font-size: 28px;
     }
 
+    /* <------- ABOUT US -------> */
+
+.about-us h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 10px 0px 30px 0px;
+}
+
+.about-us p {
+    text-align:left;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 0px 10px 0px;
+    color: #050E01;
+    line-height: 20pt;
+  }
+
+.about-image {
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+  }
+
+
     /* <------- DESCRIPTION LIST -------> */
 
 
@@ -329,5 +354,98 @@ footer p{
     width: 60px;
     padding-top: 10px;
 }
+
+/* <------- MAIN PRODUCTS SECTION -------> */
+
+.products {
+    margin: 0px 200px;
+    display: grid;
+    justify-content: stretch;
+    grid-template-areas:
+    "img img title"
+    "img img par"
+    "img img button"
+}
+
+.products img {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    grid-area: img;
+}
+
+.products h2 {
+    font-size: 38px;
+    text-align: left;
+    grid-area: title;
+}
+
+.products p {
+    grid-area: par;
+    font-size: 14px;
+    line-height: 20pt;
+}
+
+.products button {
+    position:relative; 
+    left:340px;
+    width: 120px;
+    height: 50px;
+    grid-area: button;
+}
+
+.left-area {
+    margin: 0px 200px;
+    display: grid;
+    justify-content: stretch;
+    grid-template-areas:
+    "title  img img"
+    "par    img img"
+    "button img img "
+}
+
+.left-area img {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    grid-area: img;
+}
+
+.left-area h2 {
+    font-size: 38px;
+    text-align: left;
+    grid-area: title;
+}
+
+.left-area p {
+    grid-area: par;
+    font-size: 14px;
+    line-height: 20pt;
+}
+
+.left-area button {
+    position:relative; 
+    left:-140px;
+    width: 120px;
+    height: 50px;
+    grid-area: button;
+}
+
+/* <------- FOOTER SECTION -------> */
+
+
+footer h5{
+    font-size: 14px;
+ }
+
+footer p{
+    font-size: 11px;
+ }
+
+
+ footer div {
+     margin-top: 30px;
+     padding: 50px 50px;
+ }
 
    }
