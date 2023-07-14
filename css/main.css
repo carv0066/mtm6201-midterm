@@ -17,6 +17,11 @@ p {
     font-family: 'Merriweather', serif;
 }
 
+.skip-links{
+    background-color: #231651;
+    display: flex;
+}
+
 .nav-items {
     background-color: #231651;
    
