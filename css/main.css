@@ -248,3 +248,86 @@ footer p{
  footer a {
      color: white;
  }
+
+  /* ************************************************************************************************************ */
+ /* DESKTOP STYLING */
+ /* ************************************************************************************************************ */
+ @media screen and (min-width: 760px) {
+
+    /* I changed the display on the nav bar so it would be horizontal instead of vertical */
+
+    .nav-list {
+        display: flex;
+        background-color: #231651;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5em;
+    }
+
+    .nav-list li {
+        flex-grow: 1;
+    }
+
+    .nav-button {
+        padding: 10px 20px 10px 20px;
+        margin: 10px 0px 10px 0px;
+        border-radius: 5px;
+    }
+    /*Main Banner section  */
+
+    .main-banner {
+        position: relative;
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .hero-box {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 120px;
+
+    }
+
+    .hero-box h1 {
+        font-size: 80px;
+        margin-bottom: 40px;
+    }
+
+    .hero-box h3 {
+        margin: 0px 260px;
+        font-size: 28px;
+    }
+
+    /* <------- DESCRIPTION LIST -------> */
+
+
+
+.descrip-list {
+    margin: 35px 200px; 
+}
+
+.descrip-list li {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    padding: 20px 0px 30px 0px;
+}
+
+.descrip-list div {
+    padding: 5px 80px;
+}
+
+.descrip-list img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 60px;
+    padding-top: 10px;
+}
+
+   }
