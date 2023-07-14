@@ -369,7 +369,7 @@ footer p{
 .products {
     display: flex;
   }
-
+/* reverse order of item */
   .products:nth-child(2) {
     flex-direction: row-reverse;
   }
@@ -379,12 +379,12 @@ footer p{
   }
   /* Helps decrease the img size */
   .products img {
-    flex-basis: 50%;
+    flex-basis: 49%;
     width: 100%;
   }
  /* Helps decrease the text size */
   .products .textandbutton {
-    flex-basis: 50%;
+    flex-basis: 49%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -396,8 +396,10 @@ footer p{
     font-size: 28px;
   }
 
+  /* Button is responsive and doesn't shrink beyond button text */
   .textandbutton button {
-    padding:  10px 25px 10px 8px;
+    min-width: 80px;
+    padding:  8px 10px;
     position: relative;
     width: 18%;
   }
@@ -405,7 +407,8 @@ footer p{
 /* <------- CONTACT INFORMATION SECTION -------> */
 
 .form-border button {
-    margin: 0 auto;
+
+    margin: 15px 0px 10px 0px;
 }
 
 /* <------- FOOTER SECTION -------> */
