@@ -157,28 +157,33 @@ p {
 /* <------- MAIN PRODUCTS SECTION -------> */
 
 .products {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 1rem;
     /* background-color: rgba(0, 0, 0, 0.5); */
-    padding: 40px 10px 10px 10px;
+}
+
+.products h2,
+.products p,
+.products img,
+.products button {
+    margin-bottom: 1rem;
+}
+
+.products img {
+    width: 100%;
 }
 
 .products h2 {
   text-align: center;
   font-size: 20px;
   font-weight: 600;
-  padding: 10px 0px 10px 0px;
   color: #0C081D;
 }
+
 
 .products p {
     text-align:left;
     font-size: 12px;
     font-weight: 400;
-    padding: 10px 0px 10px 0px;
     color: #050E01;
   }
 
@@ -188,7 +193,9 @@ p {
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
-    margin: 10px 140px 0px 140px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
 }
 
 /* <------- FORM SECTION -------> */
@@ -359,42 +366,53 @@ footer p{
 /* <------- MAIN PRODUCTS SECTION -------> */
 
 .products {
-    margin: 0px 200px;
-    display: grid;
-    justify-content: stretch;
-    grid-template-areas:
-    "img img title"
-    "img img par"
-    "img img button"
-}
-
-.products img {
-    width: 500px;
-    display: block;
     margin: 0 auto;
-    grid-area: img;
+    max-width: 1200px;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
 }
 
-.products h2 {
-    font-size: 38px;
+.textandbutton h2 {
+    font-size: 2rem;
     text-align: left;
-    grid-area: title;
 }
+
 
 .products p {
-    grid-area: par;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 20pt;
 }
 
-.products button {
-    position:relative; 
-    left:340px;
-    width: 120px;
-    height: 50px;
-    grid-area: button;
+.textandbutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.textandbutton button {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* .products h2 {
+    grid-row:  1;
+    grid-column:  3;
+    font-size: 38px;
+    text-align: left;
+}
+
+
+
+.products button {
+    grid-row:  3;
+    grid-column:  3;
+} */
+/* 
 .left-area {
     margin: 0px 200px;
     display: grid;
@@ -403,8 +421,8 @@ footer p{
     "title  img img"
     "par    img img"
     "button img img "
-}
-
+} */
+/* 
 .left-area img {
     width: 500px;
     display: block;
@@ -430,7 +448,7 @@ footer p{
     width: 120px;
     height: 50px;
     grid-area: button;
-}
+} */
 
 /* <------- CONTACT INFORMATION SECTION -------> */
 
@@ -452,7 +470,6 @@ footer p{
 
  footer div {
      margin-top: 30px;
-     padding: 50px 50px;
+        padding: 50px 50px;
  }
-
-   }
+}
