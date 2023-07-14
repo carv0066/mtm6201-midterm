@@ -184,6 +184,7 @@ p {
     text-align:left;
     font-size: 12px;
     font-weight: 400;
+    line-height: 20pt;
     color: #050E01;
   }
 
@@ -366,89 +367,39 @@ footer p{
 /* <------- MAIN PRODUCTS SECTION -------> */
 
 .products {
-    margin: 0 auto;
-    max-width: 1200px;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr;
-}
+    display: flex;
+  }
 
-.textandbutton h2 {
-    font-size: 2rem;
-    text-align: left;
-}
+  .products:nth-child(2) {
+    flex-direction: row-reverse;
+  }
 
-
-.products p {
-    font-size: 1rem;
-    line-height: 20pt;
-}
-
-.textandbutton {
+  .products:nth-child(4) {
+    flex-direction: row-reverse;
+  }
+  /* Helps decrease the img size */
+  .products img {
+    flex-basis: 50%;
+    width: 100%;
+  }
+ /* Helps decrease the text size */
+  .products .textandbutton {
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
+    justify-content: center;
+    padding: 80px 0px;
+  }
 
-.textandbutton button {
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
-}
-
-/* .products h2 {
-    grid-row:  1;
-    grid-column:  3;
-    font-size: 38px;
+  .textandbutton h2{
     text-align: left;
-}
+    font-size: 28px;
+  }
 
-
-
-.products button {
-    grid-row:  3;
-    grid-column:  3;
-} */
-/* 
-.left-area {
-    margin: 0px 200px;
-    display: grid;
-    justify-content: stretch;
-    grid-template-areas:
-    "title  img img"
-    "par    img img"
-    "button img img "
-} */
-/* 
-.left-area img {
-    width: 500px;
-    display: block;
-    margin: 0 auto;
-    grid-area: img;
-}
-
-.left-area h2 {
-    font-size: 38px;
-    text-align: left;
-    grid-area: title;
-}
-
-.left-area p {
-    grid-area: par;
-    font-size: 14px;
-    line-height: 20pt;
-}
-
-.left-area button {
-    position:relative; 
-    left:-140px;
-    width: 120px;
-    height: 50px;
-    grid-area: button;
-} */
+  .textandbutton button {
+    position: relative;
+    width: 18%;
+  }
 
 /* <------- CONTACT INFORMATION SECTION -------> */
 
