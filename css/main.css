@@ -328,21 +328,17 @@ footer p{
 
     /* <------- DESCRIPTION LIST -------> */
 
-
-
 .descrip-list {
-    margin: 35px 200px; 
-}
-
-.descrip-list li {
-    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .descrip-list li {
     font-size: 18px;
-    font-weight: 400;
-    color: white;
-    padding: 20px 0px 30px 0px;
-}
+    flex-grow:1;
+    max-width: 100%;
+  }
 
-.descrip-list div {
+.descrip-list div{
     padding: 5px 80px;
 }
 
@@ -431,15 +427,21 @@ footer p{
     grid-area: button;
 }
 
+/* <------- CONTACT INFORMATION SECTION -------> */
+
+.form-border button {
+    margin: 0 auto;
+}
+
 /* <------- FOOTER SECTION -------> */
 
 
 footer h5{
-    font-size: 14px;
+    font-size: 20px;
  }
 
 footer p{
-    font-size: 11px;
+    font-size: 15px;
  }
 
 
